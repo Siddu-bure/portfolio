@@ -265,3 +265,7 @@ html {
   background: var(--primary);
   border-radius: 4px;
 }
+
+#smokey-fluid-canvas {
+  touch-action: pan-y;
+}
