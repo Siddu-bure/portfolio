@@ -266,6 +266,9 @@ html {
   border-radius: 4px;
 }
 
-#smokey-fluid-canvas {
-  touch-action: pan-y;
+@media (hover: none) and (pointer: coarse) {
+  canvas {
+    touch-action: pan-y pinch-zoom !important;
+    pointer-events: none !important;
+  }
 }
