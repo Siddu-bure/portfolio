@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Aurora from "@/components/Aurora";
-import WindowTouchPatcher from "@/components/WindowTouchPatcher";
-import { SmokeyFluidCursor } from "react-smokey-fluid-cursor";
+import FluidCursorWrapper from "@/components/FluidCursorWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,17 +38,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Aurora />
-        <WindowTouchPatcher />
-        <SmokeyFluidCursor
-          config={{
-            transparent: true,
-            densityDissipation: 0.98,
-            velocityDissipation: 0.98,
-            curl: 30,
-            splatRadius: 0.2,
-            splatForce: 6000,
-          }}
-        />
+        <FluidCursorWrapper />
         {children}
       </body>
     </html>
