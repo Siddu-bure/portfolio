@@ -265,10 +265,3 @@ html {
   background: var(--primary);
   border-radius: 4px;
 }
-
-@media (hover: none) and (pointer: coarse) {
-  canvas {
-    touch-action: pan-y pinch-zoom !important;
-    pointer-events: none !important;
-  }
-}
