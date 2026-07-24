@@ -265,3 +265,7 @@ html {
   background: var(--primary);
   border-radius: 4px;
 }
+
+canvas {
+  touch-action: pan-y pinch-zoom !important;
+}
